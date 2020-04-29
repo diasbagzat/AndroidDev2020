@@ -122,7 +122,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_stories4"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.078" />
+                app:layout_constraintVertical_bias="0.078"
+                tools:srcCompat="@drawable/prof7" />
 
             <ImageView
                 android:id="@+id/iv_stories3"
@@ -136,7 +137,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_stories1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.2" />
+                app:layout_constraintVertical_bias="0.2"
+                tools:srcCompat="@drawable/prof20" />
 
             <ImageView
                 android:id="@+id/iv_stories4"
@@ -150,7 +152,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_stories3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.2" />
+                app:layout_constraintVertical_bias="0.2"
+                tools:srcCompat="@drawable/prof2" />
 
             <TextView
                 android:id="@+id/textView"

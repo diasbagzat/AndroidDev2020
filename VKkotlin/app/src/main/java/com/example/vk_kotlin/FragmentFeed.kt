@@ -92,43 +92,44 @@ class FragmentFeed: Fragment(), ItemClickListener, FragmentButtonListener, Fragm
 
     private fun newsGenerator(): MutableList<ModelFeed> {
         val items: MutableList<ModelFeed> = ArrayList<ModelFeed>()
-        val feed1 = ModelFeed(1,
-            "100",
-            "2",
-            23,
-            "6",
-            R.drawable.prof4,
-            R.drawable.content4,
-            "Бизнес Тренды",
-            "час назад",
-            getString(R.string.content4)
+        val feed1 = ModelFeed(
+            20,
+            "375",
+            "63",
+            274,
+            "178",
+            R.drawable.prof20,
+            R.drawable.content20,
+            "Как Челентано",
+            "два часа назад",
+            getString(R.string.content20)
         )
         items.add(feed1)
         val feed2 = ModelFeed(
-            2,
-            "104",
-            "2", 21,
-            "2",
-            R.drawable.prof5,
-            R.drawable.content5,
-            "Александр Романов",
-            "два часа назад",
-            getString(R.string.content5)
+            19,
+            "64",
+            "13", 54,
+            "10",
+            R.drawable.prof19,
+            R.drawable.content19,
+            "KBTU Startup Incubator",
+            "30 окт 2018",
+            getString(R.string.content19)
         )
         items.add(feed2)
-        val feed3 = ModelFeed(
-            3,
-            "1344",
-            "23",
-            212,
-            "24",
-            R.drawable.prof6,
-            R.drawable.content6,
-            "НЛП-Клуб online",
-            "два часа назад",
-            getString(R.string.content6)
+        val feed7 = ModelFeed(
+            7,
+            "101",
+            "3", 24,
+            "7",
+            R.drawable.prof3,
+            R.drawable.content3,
+            "Way",
+            "час назад",
+            "An asphalt road through a dark forest"
         )
-        items.add(feed3)
+        items.add(feed7)
+
         val feed4 = ModelFeed(
             4,
             "144",
@@ -166,18 +167,31 @@ class FragmentFeed: Fragment(), ItemClickListener, FragmentButtonListener, Fragm
             "Прежде чем лопать эти пузырики, вспомни, что воздух внутри этих пузыриков прибыл к тебе из Китая."
         )
         items.add(feed6)
-        val feed7 = ModelFeed(
-            7,
-            "101",
-            "3", 24,
-            "7",
-            R.drawable.prof3,
-            R.drawable.content3,
-            "Way",
-            "час назад",
-            "An asphalt road through a dark forest"
+        val feed13 = ModelFeed(
+            13,
+            "34",
+            "12", 25,
+            "6",
+            R.drawable.prof13,
+            R.drawable.content13,
+            "Джон Рокфеллер и другие ",
+            "15 июл 2019",
+            getString(R.string.content13)
         )
-        items.add(feed7)
+        items.add(feed13)
+        val feed14 = ModelFeed(
+            14,
+            "33",
+            "12", 21,
+            "5",
+            R.drawable.prof14,
+            R.drawable.content14,
+            "overpublic1",
+            "Сегодня в 2:46",
+            getString(R.string.content14)
+        )
+        items.add(feed14)
+
         val feed8 = ModelFeed(
             8,
             "14",
@@ -190,6 +204,19 @@ class FragmentFeed: Fragment(), ItemClickListener, FragmentButtonListener, Fragm
             getString(R.string.content8)
         )
         items.add(feed8)
+        val feed3 = ModelFeed(
+            3,
+            "1344",
+            "23",
+            212,
+            "24",
+            R.drawable.prof6,
+            R.drawable.content6,
+            "НЛП-Клуб online",
+            "два часа назад",
+            getString(R.string.content6)
+        )
+        items.add(feed3)
         val feed9 = ModelFeed(
             9,
             "1",
@@ -238,30 +265,7 @@ class FragmentFeed: Fragment(), ItemClickListener, FragmentButtonListener, Fragm
             getString(R.string.content12)
         )
         items.add(feed12)
-        val feed13 = ModelFeed(
-            13,
-            "34",
-            "12", 25,
-            "6",
-            R.drawable.prof13,
-            R.drawable.content13,
-            "Джон Рокфеллер и другие ",
-            "15 июл 2019",
-            getString(R.string.content13)
-        )
-        items.add(feed13)
-        val feed14 = ModelFeed(
-            14,
-            "33",
-            "12", 21,
-            "5",
-            R.drawable.prof14,
-            R.drawable.content14,
-            "overpublic1",
-            "Сегодня в 2:46",
-            getString(R.string.content14)
-        )
-        items.add(feed14)
+
         val feed15 = ModelFeed(
             15,
             "46",
@@ -310,29 +314,30 @@ class FragmentFeed: Fragment(), ItemClickListener, FragmentButtonListener, Fragm
             getString(R.string.content18)
         )
         items.add(feed18)
+
         val feed19 = ModelFeed(
-            19,
-            "64",
-            "13", 54,
-            "10",
-            R.drawable.prof19,
-            R.drawable.content19,
-            "KBTU Startup Incubator",
-            "30 окт 2018",
-            getString(R.string.content19)
+            2,
+            "104",
+            "2", 21,
+            "2",
+            R.drawable.prof5,
+            R.drawable.content5,
+            "Александр Романов",
+            "два часа назад",
+            getString(R.string.content5)
         )
         items.add(feed19)
-        val feed20 = ModelFeed(
-            20,
-            "375",
-            "63",
-            274,
-            "178",
-            R.drawable.prof20,
-            R.drawable.content20,
-            "Как Челентано",
-            "два часа назад",
-            getString(R.string.content20)
+
+        val feed20 = ModelFeed(1,
+            "100",
+            "2",
+            23,
+            "6",
+            R.drawable.prof4,
+            R.drawable.content4,
+            "Бизнес Тренды",
+            "час назад",
+            getString(R.string.content4)
         )
         items.add(feed20)
         return items

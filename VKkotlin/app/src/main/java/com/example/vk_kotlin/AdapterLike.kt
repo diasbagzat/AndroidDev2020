@@ -7,25 +7,31 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
- class AdapterLike (
-    feedArrayList: MutableList<ModelFeed>,
-    itemClickListener: ItemClickListener?,
-    fragmentLikeListener: FragmentLikeListener?
+ class  AdapterLike (
+    private val feedArrayList: MutableList<ModelFeed>,
+    private val listener: ItemClickListener?,
+    private val fragmentLikeListener: FragmentLikeListener?
 ) :
     RecyclerView.Adapter<AdapterLike.MyViewHolder>() {
-    var feedArrayList: MutableList<ModelFeed>
-    private val listener: ItemClickListener?
-    private val fragmentLikeListener: FragmentLikeListener?
+//    var feedArrayList: MutableList<ModelFeed>
+//    private val listener: ItemClickListener?
+//    private val fragmentLikeListener: FragmentLikeListener?
 
-    init {
-        this.feedArrayList = feedArrayList
-
-        this.listener = itemClickListener
-        this.fragmentLikeListener = fragmentLikeListener
-    }
+//    init {
+//        this.feedArrayList = feedArrayList
+//
+//        this.listener = itemClickListener
+//        this.fragmentLikeListener = fragmentLikeListener
+//    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.vk_feed, parent, false)
+        val params = RecyclerView.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        )
+        view.layoutParams = params
+
         return MyViewHolder(view)
     }
 
@@ -40,13 +46,13 @@ import androidx.recyclerview.widget.RecyclerView
         holder.tvRepost.text = modelFeed.repost
         holder.tvView.text = modelFeed.view
         holder.ivLike.setImageResource(R.drawable.liked)
-        if(modelFeed.postpic == 0) {
-            holder.ivPostPic.visibility = View.GONE
-        } else {
-            holder.ivPostPic.visibility = View.VISIBLE
-            holder.ivPostPic.setImageResource(modelFeed.postpic)
-
-        }
+//        if(modelFeed.postpic == 0) {
+//            holder.ivPostPic.visibility = View.GONE
+//        } else {
+//            holder.ivPostPic.visibility = View.VISIBLE
+//            holder.ivPostPic.setImageResource(modelFeed.postpic)
+//
+//        }
         holder.itemView.setOnClickListener{
             listener?.  itemClick(position, modelFeed)
         }

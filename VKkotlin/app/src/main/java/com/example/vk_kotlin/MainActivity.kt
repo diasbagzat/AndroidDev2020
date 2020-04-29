@@ -50,7 +50,9 @@ class MainActivity : AppCompatActivity(), AdapterFeed.FragmentLikeListener, Adap
 
     override fun removeItemLike(feed: ModelFeed?) {
         (fragmentFeed as FragmentFeed).removeLike(feed)
-        (fragmentLike as FragmentLike).removeLike(feed)
+        if (feed != null) {
+            (fragmentLike as FragmentLike).removeLike(feed)
+        }
     }
 
     override fun myClick(modelFeed: ModelFeed?, option: Int) {
