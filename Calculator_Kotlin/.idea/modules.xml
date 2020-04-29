@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Calculator_Kotlin-master-TheMovie.iml" filepath="$PROJECT_DIR$/Calculator_Kotlin-master-TheMovie.iml" group="TheMovie" />
+      <module fileurl="file://$PROJECT_DIR$/TheMovie.iml" filepath="$PROJECT_DIR$/TheMovie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TheMovie/app" />
+    </modules>
+  </component>
+</project>
